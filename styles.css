@@ -16,4 +16,139 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'Merriweather Sans', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 60px;
+  margin: 40px;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+/* ASIDE */
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+aside .profile,
+aside .links,
+aside .technologies,
+aside .experiences,
+aside .education {
+  background-color: var(--card-color);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PROFILE */
+
+aside .profile {
+  align-items: center;
+}
+
+aside .profile .profile-photo {
+  width: 128px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+aside .profile .profile-photo img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #00ff00;
+}
+
+aside .profile .profile-name {
+  margin-bottom: 10px;
+}
+
+/* LINKS */
+
+aside .links {
+  gap: 20px;
+}
+
+aside .links .link {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* TECHNOLOGIES */
+
+aside .technologies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+aside .technologies .techs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+aside .technologies .techs span {
+  background-color: #cb92b1;
+  border-radius: 30px;
+  font-size: 10px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* TECHNOLOGIES / EDUCATION */
+
+aside .experiences,
+aside .education {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+aside .experiences ul,
+aside .education ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 40px;
+}
+
+aside .experiences ul h6,
+aside .education ul h6 {
+  font-weight: bold;
+}
+
+aside .experiences ul p,
+aside .education ul p {
+  font-size: 12px;
 }
