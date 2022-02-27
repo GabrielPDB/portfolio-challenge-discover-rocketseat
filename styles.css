@@ -22,6 +22,11 @@ body {
   margin: 40px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 h1 {
   font-size: 23px;
 }
@@ -30,12 +35,24 @@ h2 {
   font-size: 20px;
 }
 
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
 h5 {
   font-size: 13px;
 }
 
 h6 {
   font-size: 12px;
+}
+
+p {
+  font-size: 14px;
 }
 
 /* ASIDE */
@@ -151,4 +168,154 @@ aside .education ul h6 {
 aside .experiences ul p,
 aside .education ul p {
   font-size: 12px;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+main .projects .header,
+main .posts .header {
+  background-color: var(--card-color);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PROJECTS */
+
+main .projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+main .projects .project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+main .projects .project-cards .card {
+  background-color: var(--card-color);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+main .projects .project-cards .card .card-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .projects .project-cards .card .card-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .projects .project-cards .card .card-actions .github-infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+main .projects .project-cards .card .card-actions .github-infos .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+main .projects .project-cards .card .card-actions .tech-info::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #e7de79;
+  border-radius: 50%;
+  border: 1px solid #837e9f;
+}
+
+main .projects .project-cards .card .card-actions .tech-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+/* POSTS */
+
+main .posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+main .posts .post-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+main .posts .post-cards .card {
+  background-color: var(--card-color);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+main .posts .post-cards .card .profile-photo {
+  width: 128px;
+  height: 128px;
+}
+
+main .posts .post-cards .card .profile-photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main .posts .post-cards .card .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+main .posts .post-cards .card .content .title,
+main .posts .post-cards .card .content .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .posts .post-cards .card .content .description .hashtags {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
