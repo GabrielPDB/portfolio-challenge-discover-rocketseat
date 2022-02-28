@@ -102,6 +102,10 @@ aside .profile .profile-name {
   margin-bottom: 10px;
 }
 
+aside .profile .profile-description {
+  text-align: center;
+}
+
 /* LINKS */
 
 aside .links {
